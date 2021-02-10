@@ -1,23 +1,23 @@
 <template>
   <div>
-    <h2>{{ actu.title }}</h2>
-    <nuxt-content :document="actu" />
+    <h2>{{ post.title }}</h2>
+    <nuxt-content :document="post" />
   </div>
 </template>
 
 <script>
 export default {
   async asyncData ({ $content, params, error }) {
-    let actu
+    let post
     try {
-      actu = await $content('actu', params.slug).fetch()
+      post = await $content('blog', params.slug).fetch()
       // OR const article = await $content(`articles/${params.slug}`).fetch()
     } catch (e) {
-      error({ message: 'Actu Post not found' })
+      error({ message: 'Blog Post not found' })
     }
 
     return {
-      actu
+      post
     }
   }
 }

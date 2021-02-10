@@ -1,10 +1,10 @@
 <template>
   <div>
     <h1>Mairie Green</h1>
-    <ul v-for="actu of actus" :key="actu.slug">
+    <ul v-for="post of posts" :key="post.slug">
       <li>
-        <NuxtLink :to="actu.slug">
-          {{ actu.title }}
+        <NuxtLink :to="post.slug">
+          {{ post.title }}
         </NuxtLink>
       </li>
     </ul>
@@ -14,10 +14,10 @@
 <script>
 export default {
   async asyncData ({ $content }) {
-    const actus = await $content('actu').fetch()
+    const posts = await $content('blog').fetch()
 
     return {
-      actus
+      posts
     }
   },
   head () {
