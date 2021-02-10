@@ -1,16 +1,17 @@
 <template>
   <div>
-    <h1>Mairie Green</h1>
-    <ul v-for="actu of actus" :key="actu.slug">
-      <li>
-        <NuxtLink :to="actu.slug">
-          {{ actu.title }}
-        </NuxtLink>
-      </li>
-      <li>
-        <img :src="actu.image" alt="">
-      </li>
-    </ul>
+    <div class="w-3/4 mx-auto mt-20">
+      <NuxtLink :to="actus[0].slug">
+        <h2 class="text-center">
+          {{ actus[0].title }}
+        </h2>
+      </NuxtLink>
+      <img :src="actus[0].image" alt="">
+    </div>
+    <div>
+      <h3>{{ actus[1].title }}</h3>
+      <img :src="actus[1].image" alt="">
+    </div>
   </div>
 </template>
 
@@ -18,7 +19,6 @@
 export default {
   async asyncData ({ $content }) {
     const actus = await $content('actu').fetch()
-
     return {
       actus
     }
