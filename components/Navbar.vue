@@ -32,17 +32,17 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/Audit" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
               Services et infos pratiques
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/Refonte" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
               Action municipale
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/Hebergement" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
               Découvrir Tours
             </nuxt-link>
           </li>
@@ -88,17 +88,17 @@
             </nuxt-link>
           </li>
           <li @click="drawer">
-            <nuxt-link to="/Audit" class="my-4 inline-block" @click="isOpen = true">
+            <nuxt-link to="#" class="my-4 inline-block" @click="isOpen = true">
               Services et infos pratiques
             </nuxt-link>
           </li>
           <li @click="drawer">
-            <nuxt-link to="/Refonte" class="my-4 inline-block" @click="isOpen = true">
+            <nuxt-link to="#" class="my-4 inline-block" @click="isOpen = true">
               Action municipale
             </nuxt-link>
           </li>
           <li @click="drawer">
-            <nuxt-link to="/Hebergement" class="my-4 inline-block" @click="isOpen = true">
+            <nuxt-link to="#" class="my-4 inline-block" @click="isOpen = true">
               Découvrir Tours
             </nuxt-link>
           </li>
