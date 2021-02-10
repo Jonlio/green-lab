@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-3/4 mx-auto mt-20">
+    <div class="w-3/4 mx-auto mt-20 mb-10">
       <NuxtLink :to="actus[0].slug">
         <h2 class="text-center">
           {{ actus[0].title }}
@@ -8,9 +8,15 @@
       </NuxtLink>
       <img :src="actus[0].image" alt="">
     </div>
-    <div>
-      <h3>{{ actus[1].title }}</h3>
-      <img :src="actus[1].image" alt="">
+    <div class="flex justify-around">
+      <div>
+        <h3>{{ actus[1].title }}</h3>
+        <img :src="actus[1].image" alt="">
+      </div>
+      <div>
+        <h3>{{ actus[2].title }}</h3>
+        <img :src="actus[2].image" alt="">
+      </div>
     </div>
   </div>
 </template>
