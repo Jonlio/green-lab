@@ -1,6 +1,7 @@
 ---
-title: Aux arbres Citoyens
+title: Pot au feu géant
 date: 2021-02-10T10:56:41.007Z
-description: Venez planter des arbres!
+description: Pot au feu
+image: /img/pot.jpg
 ---
-Mercredi 17 février, venez planter des arbres citoyens!
+Pot au feu géant!
