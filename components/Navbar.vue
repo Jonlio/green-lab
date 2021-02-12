@@ -1,16 +1,16 @@
 <template>
-  <nav class="w-screen h-40 pr-8 bg-blue-900">
-    <div class="flex items-center justify-between">
+  <nav class="w-screen pr-8">
+    <div class="h-30 flex justify-between items-center p-10">
       <!-- Header logo -->
       <div>
-        <img src="~/assets/logo.png" class="h-40 md:ml-10" alt="logo web more green">
+        <img src="~/assets/logo.png" class="w-40 md:ml-10" alt="logo web more green">
       </div>
 
       <!-- Mobile toggle -->
       <div class="md:hidden">
         <button @click="drawer">
           <svg
-            class="h-8 w-8 fill-current text-white"
+            class="h-8 w-8 fill-current text-black"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -25,24 +25,24 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-xl font-bold text-white font-sans">
+        <ul class="flex space-x-8 text-xl font-bold text-black font-sans">
           <li>
-            <nuxt-link to="/" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/" class="transition duration-500 ease-in-out border-b-2 pb-2 border-white hover:border-blue-900">
               Agenda
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-white hover:border-blue-900">
               Services et infos pratiques
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-white hover:border-blue-900">
               Action municipale
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-blue-900 hover:border-white">
+            <nuxt-link to="/#" class="transition duration-500 ease-in-out border-b-2 pb-2 border-white hover:border-blue-900">
               Découvrir Tours
             </nuxt-link>
           </li>
