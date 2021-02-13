@@ -33,7 +33,7 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Image", name: "image", widget: "image"}
       - { label: "Lieu", name: "lieu", widget: "string"}
-    - name: 'photos'
+  - name: 'photos'
     label: 'Baba'
     folder: 'content/photos'
     format: 'frontmatter'
