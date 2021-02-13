@@ -18,7 +18,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: "Image", name: "image", widget: "image"}
+      - { label: "Image", name: "image", widget: "image" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'agenda'
     label: 'Agenda'
@@ -31,5 +31,5 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: "Image", name: "image", widget: "image"}
-      - { label: "Lieu", name: "lieu", widget: "string"}
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Lieu", name: "lieu", widget: "string" }
