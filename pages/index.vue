@@ -3,16 +3,16 @@
     <!--Actualités-->
     <div>
       <div class="mb-10">
-        <NuxtLink :to="actus[0].slug">
-          <img :src="actus[0].image" alt="">
+        <NuxtLink :to="actus[1].slug">
+          <img :src="actus[1].image" alt="">
         </NuxtLink>
       </div>
       <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
         <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
           <h3 class="p-3 w-2/3">
-            {{ actus[1].title }}
+            {{ actus[0].title }}
           </h3>
-          <img :src="actus[1].image" alt="" class="w-1/3">
+          <img :src="actus[0].image" alt="" class="w-1/3">
         </div>
         <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
           <h3 class="p-3 w-2/3">
@@ -164,27 +164,73 @@
     <h2 class="text-center text-3xl text-blue-900 font-black">
       Agenda
     </h2>
-    <div>
-      <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
+    <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
+      <div>
         <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
-          <h3 class="p-3 w-2/3">
-            {{ actus[1].title }}
-          </h3>
-          <img :src="actus[1].image" alt="" class="w-1/3">
-        </div>
-        <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
-          <h3 class="p-3 w-2/3">
-            {{ actus[2].title }}
-          </h3>
-          <img :src="actus[2].image" alt="" class="w-1/3">
-        </div>
-        <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
-          <h3 class="p-3 w-2/3">
-            {{ actus[3].title }}
-          </h3>
-          <img :src="actus[3].image" alt="" class="w-1/3">
+          <div class="p-3 w-2/3">
+            <h3>
+              {{ agendas[0].title }}
+            </h3>
+            <p>{{ agendas[0].lieu }}</p>
+          </div>
+          <img :src="agendas[0].image" alt="" class="w-1/3">
         </div>
       </div>
+      <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
+        <div class="p-3 w-2/3">
+          <h3>
+            {{ agendas[1].title }}
+          </h3>
+          <p>{{ agendas[1].lieu }}</p>
+        </div>
+        <img :src="agendas[1].image" alt="" class="w-1/3">
+      </div>
+      <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
+        <div class="p-3 w-2/3">
+          <h3>
+            {{ agendas[2].title }}
+          </h3>
+          <p>{{ agendas[2].lieu }}</p>
+        </div>
+        <img :src="agendas[2].image" alt="" class="w-1/3">
+      </div>
+    </div>
+    <!--Action municipale-->
+    <h2 class="text-center text-3xl text-blue-900 font-black">
+      Action municipale
+    </h2>
+    <div>
+      <p>
+        Le Maire Emmanuel Denis et son équipe d'adjoints et conseillers municipaux oeuvrent chaque jour au service de la ville et de tous ses administrés.
+      </p>
+      <a class="w-3/12 bg-blue-900 text-white font-bold p-3 flex justify-center rounded hover:bg-blue-600" href="#">Vos élus</a>
+    </div>
+    <div>
+      <p>
+        Pour connaître l'action de vos élus et la vie de votre Ville, vous pouvez regarder en direct ou en différé les conseils municipaux ou consulter toutes les actualités.
+      </p>
+      <a class="w-3/5 bg-blue-900 text-white font-bold p-3 flex justify-center rounded hover:bg-blue-600" href="#">Le conseil municipal en vidéo</a>
+    </div>
+    <div>
+      <p>
+        La ville de Tours, c'est aussi des projets, des jumelages et des partenariats avec des pays et villes étrangères
+      </p>
+      <a class="w-3/6 bg-blue-900 text-white font-bold p-3 flex justify-center rounded hover:bg-blue-600" href="#">Tours à l'International</a>
+    </div>
+    <div>
+      <p>
+        Le service presse est à la disposition des journalistes professionnels dans leurs recherches de contacts ou d'informations. Suivez le lien vers l'Espace Presse de la Ville et retrouvez le Tours Médias, les communiqués, les dossiers de presse, les retours presse locaux et nationaux...
+      </p>
+      <a class="w-2/6 bg-blue-900 text-white font-bold p-3 flex justify-center rounded hover:bg-blue-600" href="#">Espace Presse</a>
+    </div>
+    <!--Image du jour-->
+    <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
+      <h2 class="text-blue-900 text-3xl text-center font-black">
+        L'image du jour
+      </h2>
+      <img :src="actus[0].image" alt="" class="w-1/3">
+      <img :src="actus[2].image" alt="" class="w-1/3">
+      <img :src="actus[3].image" alt="" class="w-1/3">
     </div>
   </div>
 </template>
@@ -193,8 +239,10 @@
 export default {
   async asyncData ({ $content }) {
     const actus = await $content('actu').fetch()
+    const agendas = await $content('agenda').fetch()
     return {
-      actus
+      actus,
+      agendas
     }
   },
   data () {

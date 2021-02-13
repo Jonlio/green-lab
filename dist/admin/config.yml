@@ -33,3 +33,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Image", name: "image", widget: "image"}
       - { label: "Lieu", name: "lieu", widget: "string"}
+    - name: 'photos'
+    label: 'Photos'
+    folder: 'content/photos'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}{{year}}-{{month}}-{{day}}-'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Image", name: "image", widget: "image"}
