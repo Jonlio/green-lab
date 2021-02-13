@@ -6,42 +6,30 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'actu'
-    label: 'Bubu'
-    folder: 'content/actu'
-    format: 'frontmatter'
+  - name: "actu"
+    label: "Actu"
+    folder: "content/actu"
+    format: "frontmatter"
     create: true
-    slug: '{{slug}}{{year}}-{{month}}-{{day}}-'
+    slug: "{{slug}}{{year}}-{{month}}-{{day}}-"
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: "Image", name: "image", widget: "image"}
-      - { label: 'Body', name: 'body', widget: 'markdown' };
-  - name: 'agenda'
-    label: 'Test'
-    folder: 'content/agenda'
-    format: 'frontmatter'
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "agenda"
+    label: "Agenda"
+    folder: "content/agenda"
+    format: "frontmatter"
     create: true
-    slug: '{{slug}}{{year}}-{{month}}-{{day}}-'
+    slug: "{{slug}}{{year}}-{{month}}-{{day}}-"
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: "Image", name: "image", widget: "image"}
-      - { label: "Lieu", name: "lieu", widget: "string"}
-  - name: 'photos'
-    label: 'Baba'
-    folder: 'content/photos'
-    format: 'frontmatter'
-    create: true
-    slug: '{{slug}}{{year}}-{{month}}-{{day}}-'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: "Image", name: "image", widget: "image"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Lieu", name: "lieu", widget: "string" }
