@@ -7,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: 'actu'
-    label: 'Bubu'
+    label: 'Actu'
     folder: 'content/actu'
     format: 'frontmatter'
     create: true
@@ -21,7 +21,7 @@ collections:
       - { label: "Image", name: "image", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' };
   - name: 'agenda'
-    label: 'Test'
+    label: 'Agenda'
     folder: 'content/agenda'
     format: 'frontmatter'
     create: true
@@ -33,9 +33,9 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Image", name: "image", widget: "image"}
       - { label: "Lieu", name: "lieu", widget: "string"}
-  - name: 'photos'
-    label: 'Baba'
-    folder: 'content/photos'
+  - name: 'photo'
+    label: 'Photo'
+    folder: 'content/photo'
     format: 'frontmatter'
     create: true
     slug: '{{slug}}{{year}}-{{month}}-{{day}}-'
