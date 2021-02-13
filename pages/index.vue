@@ -223,15 +223,18 @@
       </p>
       <a class="w-2/6 bg-blue-900 text-white font-bold p-3 flex justify-center rounded hover:bg-blue-600" href="#">Espace Presse</a>
     </div>
-    <!--Image du jour
-    <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
-      <h2 class="text-blue-900 text-3xl text-center font-black">
+    <!--Image du jour-->
+    <div>
+      <h2 class="text-blue-900 text-3xl text-center font-black mb-5">
         L'image du jour
       </h2>
-      <img :src="photos[0].image" alt="" class="w-1/3">
-      <img :src="photos[1].image" alt="" class="w-1/3">
-      <img :src="photos[2].image" alt="" class="w-1/3">
-    </div>-->
+      <div class="grid grid-cols-2 gap-2">
+        <img :src="photos[0].image" alt="">
+        <img :src="photos[1].image" alt="">
+        <img :src="photos[2].image" alt="">
+        <img :src="photos[3].image" alt="">
+      </div>
+    </div>
   </div>
 </template>
 
