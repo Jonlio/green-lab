@@ -21,7 +21,7 @@ collections:
       - { label: "Image", name: "image", widget: "image"}
       - { label: 'Body', name: 'body', widget: 'markdown' };
   - name: 'agenda'
-    label: 'Agenda'
+    label: 'Test'
     folder: 'content/agenda'
     format: 'frontmatter'
     create: true
