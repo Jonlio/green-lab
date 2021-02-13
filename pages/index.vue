@@ -229,8 +229,8 @@
         L'image du jour
       </h2>
       <img :src="actus[0].image" alt="" class="w-1/3">
+      <img :src="actus[1].image" alt="" class="w-1/3">
       <img :src="actus[2].image" alt="" class="w-1/3">
-      <img :src="actus[3].image" alt="" class="w-1/3">
     </div>
   </div>
 </template>
