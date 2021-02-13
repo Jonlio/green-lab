@@ -228,9 +228,9 @@
       <h2 class="text-blue-900 text-3xl text-center font-black">
         L'image du jour
       </h2>
-      <img :src="actus[0].image" alt="" class="w-1/3">
-      <img :src="actus[1].image" alt="" class="w-1/3">
-      <img :src="actus[2].image" alt="" class="w-1/3">
+      <img :src="photos[0].image" alt="" class="w-1/3">
+      <img :src="photos[1].image" alt="" class="w-1/3">
+      <img :src="photos[2].image" alt="" class="w-1/3">
     </div>-->
   </div>
 </template>
@@ -240,9 +240,11 @@ export default {
   async asyncData ({ $content }) {
     const actus = await $content('actu').fetch()
     const agendas = await $content('agenda').fetch()
+    const photos = await $content('photo').fetch()
     return {
       actus,
-      agendas
+      agendas,
+      photos
     }
   },
   data () {
