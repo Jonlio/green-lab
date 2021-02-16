@@ -6,6 +6,19 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "affiche"
+    label: "Affiche"
+    folder: "content/affiche"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}{{year}}-{{month}}-{{day}}-"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
   - name: "actu"
     label: "Actu"
     folder: "content/actu"
