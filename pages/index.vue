@@ -3,28 +3,26 @@
     <!--Actualités-->
     <div>
       <div class="mb-10">
-        <NuxtLink :to="actus[1].slug">
-          <img :src="actus[1].image" alt="">
-        </NuxtLink>
+          <img :src="affiche[0].image" alt="">
       </div>
       <div class="flex flex-col text-white font-bold w-2/3 mx-auto space-y-4">
         <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
           <h3 class="p-3 w-2/3">
-            {{ actus[0].title }}
+            {{ actus[3].title }}
           </h3>
-          <img :src="actus[0].image" alt="" class="w-1/3">
+          <img :src="actus[3].image" alt="" class="w-1/3">
+        </div>
+        <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
+          <h3 class="p-3 w-2/3">
+            {{ actus[1].title }}
+          </h3>
+          <img :src="actus[1].image" alt="" class="w-1/3">
         </div>
         <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
           <h3 class="p-3 w-2/3">
             {{ actus[2].title }}
           </h3>
           <img :src="actus[2].image" alt="" class="w-1/3">
-        </div>
-        <div class="flex flex-row-reverse bg-blue-900 rounded-md p-2">
-          <h3 class="p-3 w-2/3">
-            {{ actus[3].title }}
-          </h3>
-          <img :src="actus[3].image" alt="" class="w-1/3">
         </div>
       </div>
     </div>
@@ -241,10 +239,12 @@
 <script>
 export default {
   async asyncData ({ $content }) {
+    const affiche = await $content('affiche').fetch()
     const actus = await $content('actu').fetch()
     const agendas = await $content('agenda').fetch()
     const photos = await $content('photo').fetch()
     return {
+      affiche,
       actus,
       agendas,
       photos

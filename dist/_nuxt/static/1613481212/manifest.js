@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fvaccination-contre-la-covid-192021-02-10-"]})
