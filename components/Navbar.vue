@@ -3,7 +3,7 @@
     <div class="h-30 flex justify-between items-center p-10">
       <!-- Header logo -->
       <div>
-        <source :srcSet="require('~/assets/logo.png?webp')" type="image/webp" />
+        <img :srcSet="require('~/assets/logo.png?webp')" class="w-40 md:ml-10" type="image/webp" />
       </div>
 
       <!-- Mobile toggle -->
