@@ -62,55 +62,35 @@
               :class="{ hidden: openTab !== 1, block: openTab === 1 }"
             >
               <li>
-                <img src="~/assets/culture.png" alt="" class="mx-auto mb-3">
+                <img :srcSet="require('~/assets/culture.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Culture et patrimoine</h3>
               </li>
               <li>
-                <img
-                  src="~/assets/commerces.png"
-                  alt=""
-                  class="mx-auto mb-3"
-                >
+                <img :srcSet="require('~/assets/commerces.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Commerces et marchés</h3>
               </li>
               <li>
-                <img
-                  src="~/assets/transport.png"
-                  alt=""
-                  class="mx-auto mb-3"
-                >
+                <img :srcSet="require('~/assets/transport.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Transport et voirie</h3>
               </li>
               <li>
-                <img
-                  src="~/assets/education.png"
-                  alt=""
-                  class="mx-auto mb-3"
-                >
+                <img :srcSet="require('~/assets/education.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Education et jeunesse</h3>
               </li>
               <li>
-                <img src="~/assets/swim.png" alt="" class="mx-auto mb-3">
+                <img :srcSet="require('~/assets/swim.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Sports</h3>
               </li>
               <li>
-                <img
-                  src="~/assets/logement.png"
-                  alt=""
-                  class="mx-auto mb-3"
-                >
+                <img :srcSet="require('~/assets/logement.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Logement et urbanisme</h3>
               </li>
               <li>
-                <img src="~/assets/famille.jpg" alt="" class="mx-auto mb-3">
+                <img :srcSet="require('~/assets/famille.jpg?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Parcs et Jardins</h3>
               </li>
               <li>
-                <img
-                  src="~/assets/securite.png"
-                  alt=""
-                  class="mx-auto mb-3"
-                >
+                <img :srcSet="require('~/assets/securite.png?webp')" class="mx-auto mb-3" type="image/webp" />
                 <h3>Situations d'urgences</h3>
               </li>
             </ul>
@@ -120,11 +100,7 @@
                 :class="{ hidden: openTab !== 2, block: openTab === 2 }"
               >
                 <li>
-                  <img
-                    src="~/assets/culture.png"
-                    alt=""
-                    class="mx-auto mb-3"
-                  >
+                  <img :srcSet="require('~/assets/culture.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Visiter Tours</h3>
                 </li>
                 <li>
@@ -136,19 +112,15 @@
                   <h3>Culture Patrimoine</h3>
                 </li>
                 <li>
-                  <img src="~/assets/swim.png" alt="" class="mx-auto mb-3">
+                  <img :srcSet="require('~/assets/swim.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Activité Loisirs</h3>
                 </li>
                 <li>
-                  <img src="~/assets/sante.png" alt="" class="mx-auto mb-3">
+                  <img :srcSet="require('~/assets/sante.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>En cas d'urgence</h3>
                 </li>
                 <li>
-                  <img
-                    src="~/assets/numerique.jpg"
-                    alt=""
-                    class="mx-auto mb-3"
-                  >
+                  <img :srcSet="require('~/assets/numerique.jpg?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Numérique</h3>
                 </li>
               </ul>
@@ -159,27 +131,19 @@
                 :class="{ hidden: openTab !== 3, block: openTab === 3 }"
               >
                 <li>
-                  <img
-                    src="~/assets/education.png"
-                    alt=""
-                    class="mx-auto mb-3"
-                  >
+                  <img :srcSet="require('~/assets/education.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Education Jeunesse</h3>
                 </li>
                 <li>
-                  <img src="~/assets/sante.png" alt="" class="mx-auto mb-3">
+                  <img :srcSet="require('~/assets/sante.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Santé Jeunes</h3>
                 </li>
                 <li>
-                  <img src="~/assets/swim.png" alt="" class="mx-auto mb-3">
+                  <img :srcSet="require('~/assets/swim.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Sport Jeunes</h3>
                 </li>
                 <li>
-                  <img
-                    src="~/assets/bienvenue.jpg"
-                    alt=""
-                    class="mx-auto mb-3"
-                  >
+                  <img :srcSet="require('~/assets/bienvenue.jpg?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Loisirs Jeunes</h3>
                 </li>
               </ul>
@@ -190,15 +154,11 @@
                 :class="{ hidden: openTab !== 4, block: openTab === 4 }"
               >
                 <li>
-                  <img src="~/assets/usine.jpg" alt="" class="mx-auto mb-3">
+                  <img :srcSet="require('~/assets/usine.jpg?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Affaires et entreprises</h3>
                 </li>
                 <li>
-                  <img
-                    src="~/assets/logement.png"
-                    alt=""
-                    class="mx-auto mb-3"
-                  >
+                  <img :srcSet="require('~/assets/logement.png?webp')" class="mx-auto mb-3" type="image/webp" />
                   <h3>Urbanisme - Recensement</h3>
                 </li>
               </ul>
