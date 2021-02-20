@@ -48,6 +48,16 @@ export default {
     optimizeImages: true
   },
 
+  loaders: [
+    {
+      test: /\.(jpe?g|png)$/i,
+      loaders: [
+        'file-loader',
+        'webp-loader'
+      ]
+    }
+  ],
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content

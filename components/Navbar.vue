@@ -4,6 +4,7 @@
       <!-- Header logo -->
       <div>
         <img src="~/assets/logo.png" class="w-40 md:ml-10" alt="logo web more green">
+        <source :srcSet="require('~/assets/logo.png?webp')" type="image/webp" />
       </div>
 
       <!-- Mobile toggle -->

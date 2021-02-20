@@ -26,6 +26,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.5.0",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.1"
+    "imagemin-pngquant": "^9.0.1",
+    "webp-loader": "^0.6.0"
   }
 }
