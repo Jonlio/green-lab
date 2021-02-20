@@ -28,9 +28,6 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  render: {
-    injectScripts: false
-  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -38,6 +35,7 @@ export default {
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@aceforth/nuxt-optimized-images',
     [
       '@aceforth/nuxt-netlify',
       {
@@ -45,6 +43,10 @@ export default {
       }
     ]
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
