@@ -35,7 +35,7 @@ export default {
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-optimized-images',
+    // '@aceforth/nuxt-optimized-images',
     [
       '@aceforth/nuxt-netlify',
       {
@@ -43,7 +43,7 @@ export default {
       }
     ]
   ],
-
+  /*
   optimizedImages: {
     optimizeImages: true
   },
@@ -57,11 +57,11 @@ export default {
       ]
     }
   ],
-
+*/
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
+    '@nuxt/content'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

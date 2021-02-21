@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: assets
-public_folder: /_nuxt/img
+public_folder: /_nuxt/assets
 
 collections:
   - name: "affiche"
