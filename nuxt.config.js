@@ -35,7 +35,6 @@ export default {
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // '@aceforth/nuxt-optimized-images',
     [
       '@aceforth/nuxt-netlify',
       {
@@ -43,25 +42,18 @@ export default {
       }
     ]
   ],
-  /*
-  optimizedImages: {
-    optimizeImages: true
-  },
-
-  loaders: [
-    {
-      test: /\.(jpe?g|png)$/i,
-      loaders: [
-        'file-loader',
-        'webp-loader'
-      ]
+  render: {
+    // Setting up cache for 'static' directory - a year in milliseconds
+    // https://web.dev/uses-long-cache-ttl
+    static: {
+      maxAge: 60 * 60 * 24 * 365 * 1000
     }
-  ],
-*/
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-responsive-loader'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

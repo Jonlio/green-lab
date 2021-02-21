@@ -87,7 +87,7 @@
       </h2>
       <div class="grid grid-cols-2 gap-4">
         <div v-for="photo in photos" :key="photo.title">
-          <img :src="photo.image" alt="">
+          <img :srcset="photo.image" alt="">
         </div>
       </div>
     </div>
