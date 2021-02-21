@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: assets
-public_folder: /_nuxt/assets
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: "affiche"
