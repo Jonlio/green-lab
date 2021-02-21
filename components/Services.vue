@@ -62,7 +62,7 @@
               :class="{ hidden: openTab !== 1, block: openTab === 1 }"
             >
               <li>
-                <img :srcSet="require('~/assets/culture.png?nf_resize=fit&w=250')" loading="lazy" class="mx-auto mb-3" type="image/webp" />
+                <img src="~/assets/culture.png" alt="…" class="mx-auto mb-3" />
                 <h3>Culture et patrimoine</h3>
               </li>
               <li>
