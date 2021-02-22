@@ -52,8 +52,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
-    'nuxt-responsive-loader'
+    '@nuxt/content'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -61,6 +60,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-
   }
 }
